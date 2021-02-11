@@ -1,0 +1,103 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --vermelho-dark: #8b050c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Arial, Times, serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    font-family: Arial, Times, serif;
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header .container  nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .container  nav a:hover {
+    color: #FFF;
+}
+
+/* FILME PRINCIPAL (CAPA)*/
+.banner {
+    color: #FFF;
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5) 100%),
+                url('../img/banner.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner .container {
+    padding: 10px;
+}
+
+.banner .container h3, .banner .container p{
+    margin: 10px 0;
+}
+
+.banner .container p {
+    max-width: 60%;
+}
+
+.banner .container h3 {
+    font-size: 40px;
+}
+
+.banner .container button {
+    margin: 40px 0;
+    background: transparent;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.banner .container button:hover {
+    color: #AAA;
+}
+
+.banner .container button.now {
+    background-color: var(--vermelho);
+    border-radius: 5px;
+}
+
+.banner .container button.now:hover {
+    background-color: var(--vermelho-dark);
+    color: #FFF;
+}
+
+.banner .container button i {
+    margin-right: 5px;
+}
+
+
+/*CAROUSEL*/
+section .container {
+    padding: 10px;
+}
